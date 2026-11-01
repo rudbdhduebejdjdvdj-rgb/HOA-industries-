@@ -98,3 +98,34 @@ h1 em,h2 em,.intro-content h2 span,.section-heading h2 span{color:#898989}
 
 /* Standalone corporate pages */
 .page-main{padding-top:82px;min-height:80vh}.page-hero{padding:100px 10% 65px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 80% 20%,rgba(255,255,255,.07),transparent 35%),#050505}.page-kicker{font:9px var(--mono);letter-spacing:.18em;color:#888}.page-hero h1{font-size:clamp(44px,6vw,78px);max-width:1000px;margin:24px 0}.page-hero p{max-width:720px;color:#999;line-height:2}.page-content{padding:60px 10% 100px}.page-content h2{font-size:clamp(28px,4vw,44px)}.page-content p,.page-content li{color:#999;font-size:13px;line-height:1.95;max-width:850px}.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:35px 0}.detail-card{background:#090909;padding:25px;min-height:190px;display:flex;flex-direction:column}.detail-card .num{font:8px var(--mono);letter-spacing:.14em;color:#777}.detail-card h3{margin:25px 0 10px}.detail-card p{font-size:11px;margin:0 0 18px}.detail-link{display:inline-block;margin-top:auto;padding:12px 14px;border:1px solid #444;font:8px var(--mono);letter-spacing:.1em;color:#eee}.detail-card:hover{background:#151515}.detail-section{padding:30px 0;border-top:1px solid var(--line);max-width:900px}.status-note{padding:18px;border:1px solid var(--line);background:#0a0a0a;color:#999;font-size:11px;line-height:1.8;margin:25px 0}.site-footer{padding:25px 6%;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#777;font:8px var(--mono);letter-spacing:.12em}.desktop-nav{gap:clamp(10px,1.3vw,20px);margin-left:2%}.desktop-nav a{font-size:9px;white-space:nowrap}@media(max-width:900px){.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.page-hero,.page-content{padding-left:7%;padding-right:7%}}@media(max-width:620px){.page-main{padding-top:68px}.page-hero{padding-top:70px}.detail-grid{grid-template-columns:1fr}.site-footer{flex-direction:column;gap:12px}.desktop-nav{display:none;position:absolute;top:68px;left:0;right:0;background:#090909;padding:24px 7%;flex-direction:column}.desktop-nav.open{display:flex}.menu-toggle{display:flex;flex-direction:column;gap:5px}.menu-toggle span{width:20px;height:1px;background:#eee}.topbar{height:68px}}
+
+/* HOA visual system — 2026 */
+:root{--hoa-ink:#050709;--hoa-panel:#0c1117;--hoa-line:rgba(210,228,240,.14);--hoa-cyan:#8edcff}
+body{background:var(--hoa-ink);color:#f3f6f8}
+.topbar{backdrop-filter:blur(18px);background:rgba(5,7,9,.88);border-bottom:1px solid var(--hoa-line)}
+.brand-name{letter-spacing:.16em}
+.desktop-nav a{transition:color .2s ease}
+.desktop-nav a:hover{color:var(--hoa-cyan)}
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero-art{background-image:linear-gradient(90deg,rgba(5,7,9,.2),rgba(5,7,9,0)),url('assets/hero-aerowash.svg');background-size:cover;background-position:center}
+.hero-art .orbit,.hero-art .axis,.hero-art .core,.hero-art .art-label,.hero-art .coordinate{display:none}
+.hero-copy{z-index:2}
+.hero-lede{max-width:540px}
+.page-hero{position:relative;overflow:hidden}
+.page-hero:after{content:"";position:absolute;right:-5%;top:-45%;width:55%;height:190%;background:radial-gradient(ellipse,rgba(103,184,222,.12),transparent 65%);pointer-events:none}
+.page-content>h2 span{color:#9fcde4}
+.detail-grid{gap:14px;background:transparent;border:0}
+.detail-card{border:1px solid var(--hoa-line);border-radius:12px;overflow:hidden;min-height:235px;transition:transform .25s,border-color .25s,background .25s}
+.detail-card:hover{transform:translateY(-5px);border-color:rgba(142,220,255,.5);background:#101923}
+.detail-card img{display:block;width:calc(100% + 50px);height:150px;object-fit:cover;margin:-25px -25px 22px}
+.detail-card .detail-link{border-radius:6px;width:max-content}
+.detail-visual{margin:35px 0 55px;border:1px solid var(--hoa-line);border-radius:14px;overflow:hidden;background:#090e13}
+.detail-visual img{display:block;width:100%;max-height:460px;object-fit:cover}
+.detail-visual figcaption{padding:12px 18px;color:#8497a5;font:9px var(--mono);letter-spacing:.12em}
+.detail-section{border-color:var(--hoa-line)}
+.detail-section h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.04em}
+.status-note{border-color:var(--hoa-line);border-radius:8px}
+.button,.detail-link,.nav-contact{transition:all .2s ease}
+.site-footer{border-color:var(--hoa-line)}
+@media(max-width:800px){.hero-art{opacity:.42;position:absolute;inset:0 0 0 18%;z-index:0}.hero-copy{position:relative}.hero{min-height:650px}.detail-card img{height:170px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
