@@ -41,7 +41,8 @@ nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
   nav.classList.remove("open");
   menuToggle.setAttribute("aria-expanded","false");
 }));
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if(yearEl) yearEl.textContent = new Date().getFullYear();
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
