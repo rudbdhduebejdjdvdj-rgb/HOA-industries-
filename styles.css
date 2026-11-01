@@ -63,3 +63,18 @@ h1 em,h2 em,.intro-content h2 span,.section-heading h2 span{color:#898989}
 .repo-footer{display:flex;justify-content:space-between;gap:20px;margin-top:22px;font-size:8px;color:#777}
 .repo-footer a{color:#eee;white-space:nowrap}
 @media(max-width:620px){.repo-grid{grid-template-columns:1fr;gap:12px;margin-top:35px}.repo-card{min-height:220px;padding:22px}.repo-footer{flex-direction:column;line-height:1.8}.repo-footer a{white-space:normal}}
+
+/* AeroWash technology directory */
+.technologies{background:#050505;border-top:1px solid var(--line)}
+.technology-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:52px}
+.technology-card{min-height:265px;padding:26px;background:#090909;color:#f4f4f4;display:flex;flex-direction:column;transition:background .2s}
+.technology-card:hover{background:#151515}
+.technology-number{font:8px var(--mono);letter-spacing:.14em;color:#777}
+.technology-icon{font-size:27px;color:#ddd;margin:28px 0 17px}
+.technology-card h3{font-size:19px;letter-spacing:-.04em;margin:0 0 10px}
+.technology-card p{font-size:11px;line-height:1.85;color:#999;margin:0 0 22px;max-width:340px}
+.technology-link{font:8px var(--mono);letter-spacing:.12em;color:#eee;margin-top:auto;padding-top:16px;border-top:1px solid var(--line)}
+.technology-note{display:flex;justify-content:space-between;gap:20px;margin-top:22px;font:8px var(--mono);letter-spacing:.1em;line-height:1.8;color:#777}
+.technology-note a{color:#eee}
+@media(max-width:900px){.technology-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.technology-grid{grid-template-columns:1fr;margin-top:35px}.technology-card{min-height:220px;padding:22px}.technology-note{flex-direction:column}}
